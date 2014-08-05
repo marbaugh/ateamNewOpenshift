@@ -228,19 +228,12 @@
         var mondayWednesdayFilter = function( currentDateTime ){
             return [currentDateTime.getDay() == 1 || currentDateTime.getDay() == 3 ? true : false];
         };
-        
-        // Jquery code for the date/time picker
-        jQuery('#datetimepicker').datetimepicker({
-            format:'d.m.Y H:i',
-            inline:true,
-            lang:'en',
-            minDate:0,
-            beforeShowDay: mondayWednesdayFilter,
-            allowTimes: ['17:30']
+        // Initialize the jquery-ui datepicker with options
+        $(function() {
+            $( "#datepicker" ).datepicker({
+                minDate:0,
+                beforeShowDay: mondayWednesdayFilter});
         });
-    </script>
-
-
+    </script
 </body>
-
 </html>
