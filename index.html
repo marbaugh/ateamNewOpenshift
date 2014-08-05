@@ -139,7 +139,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-4">
                     <h2>Contact Us</h2>
-                    <p>Use the calendar or our contact info below to set up a coaching appointment. We look forward to hearing from you!</p>
+                    <p>Use the form or our contact info to set up a coaching appointment. We look forward to hearing from you!</p>
                     <ul>
                         <li>Phone: (443) 574-4ATV (4288) </li>
                         <li>Email: ateamvaulting@gmail.com</li>
@@ -148,11 +148,19 @@
                 </div>
 
                 <div class="col-lg-4 col-md-4">
+                    <h2>Current Sessions</h2>
+                    <p>Summer vault sessions are taking place Monday and Wednesday evenings from 5:30-6:30 pm.  The sessions take place on the outdoor track at Towson University's Johnny Unitas Stadium.  Please fill out the form to request a session or obtain session information.</p>
+
                 </div>
 
                 <div class="col-lg-4 col-md-4">
-                    <input id="datetimepicker" type="text" >
-                    <!--<img class="img-responsive" src="calendar_fake.png">-->
+                    <form name="userInput" id="userInput" action="send_mail.php" method="post">
+                        Name: <input type="text" name="name" required placeholder="Enter name"><br />
+                        E-mail: <input type="email" name="email" required placeholder="Enter email"><br />
+                        Date: <input type="text" id="datepicker" name='date' required placeholder="Choose a Date"><br />
+                        Comment:<br /><textarea name='comments' id='comments' /></textarea><br />
+                       <input type="submit" value="Submit">
+                    </form>
                 </div>
             </div>
             <!-- /.row -->

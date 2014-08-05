@@ -4,7 +4,8 @@
 // Fields from the HTML POST
 $user_name = $_POST["name"];
 $user_email = $_POST["email"];
-$requested_time = $_POST["time"];
+$requested_date = $_POST["date"];
+$comments = $_POST["comments"];
 
 // Message Variables
 $ateam_email = "ateamvaulting@gmail.com";
@@ -16,12 +17,13 @@ $headers = 'From: '.$ateam_email."\r\n".
 'Reply-To: '.$ateam_email."\r\n";
 
 // Message to send to A-Team Vaulting with:
-// the users name, email and requested time
+// the users name, email and requested date
 $request_msg = "";
 $request_msg .= "A vaulter has requested a session!\n";
 $request_msg .= "Name: ".($user_name)."\n";
 $request_msg .= "Email: ".($user_email)."\n";
-$request_msg .= "Time: ".($requested_time)."\n";
+$request_msg .= "Date: ".($requested_date)."\n";
+$request_msg .= "Comments: ".($comments)."\n";
 
 // Message auto reply message sent to the user
 $reply_msg = ""; 
