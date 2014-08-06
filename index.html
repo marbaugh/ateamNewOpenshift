@@ -156,9 +156,9 @@
                 <div class="col-lg-4 col-md-4">
                     <h2>Book a Session</h2>
                     <form name="userInput" id="userInput" action="send_mail.php" method="post">
-                        Name: <input type="text" style='width:100%' name="name" data-validation="length" data-validation-length="1-50" data-validation-help="Please enter you name"><br />
-                        E-mail: <input type="text" style='width:100%' name="email" data-validation="email" data-validation-help="Please enter you email"><br />
-                        Date: <input type="text" style='width:100%' id="datepicker" name='date' data-validation="required" data-validation-help="Choose a date for your session"><br />
+                        Name: <input type="text" style='width:100%' name="name" data-validation="length" data-validation-length="1-50" data-validation-error-msg="You did not enter a valid name"><br />
+                        E-mail: <input type="text" style='width:100%' name="email" data-validation="email" data-validation-error-msg="You did not enter a valid e-mail"><br />
+                        Date: <input type="text" style='width:100%' id="datepicker" name='date' data-validation="required" data-validation-error-msg="You did not choose a date"><br />
                         Comment:<br /><textarea name='comments' style='width:100%' id='comments' /></textarea><br />
                        <input type="submit" value="Submit" style="float: right;">
                     </form>
@@ -237,7 +237,11 @@
 
     <script>
 
-        $.validate();
+  $.validate({
+    validateOnBlur : false, // disable validation when input looses focus
+    errorMessagePosition : 'top', // Instead of 'element' which is default
+    scrollToTopOnError : false // Set this property to true if you have a long form
+    });
 
         // Logic to filter on only Monday and Wednesdays for the date/time picker
         var mondayWednesdayFilter = function( currentDateTime ){
