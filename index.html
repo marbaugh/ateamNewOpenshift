@@ -156,10 +156,10 @@
                 <div class="col-lg-4 col-md-4">
                     <h2>Book a Session</h2>
                     <form name="userInput" id="userInput" action="send_mail.php">
-                        Name: <input type="text" style='width:100%' name="name" data-validation="length" data-validation-length="1-50" data-validation-error-msg="You did not enter a valid name"><br />
-                        E-mail: <input type="text" style='width:100%' name="email" data-validation="email" data-validation-error-msg="You did not enter a valid e-mail"><br />
-                        Date: <input type="text" style='width:100%' id="datepicker" name='date' data-validation="required" data-validation-error-msg="You did not choose a date"><br />
-                        Comment:<br /><textarea name='comments' style='width:100%' id='comments' /></textarea><br />
+                        Name: <input type="text" style='width:100%' name="name" placeholder="Enter Name" data-validation="length" data-validation-length="1-50" data-validation-error-msg="You did not enter a valid name"><br />
+                        E-mail: <input type="text" style='width:100%' name="email" placeholder="Enter E-mail" data-validation="email" data-validation-error-msg="You did not enter a valid e-mail"><br />
+                        Date: <input type="text" style='width:100%' id="datepicker" name='date' placeholder="Choose a Session Date" data-validation="required" data-validation-error-msg="You did not choose a date"><br />
+                        Comment:<br /><textarea name='comments' style='width:100%' id='comments' placeholder="Additional Comments or Questions" /></textarea><br />
                        <input type="submit" value="Submit" style="float: right;">
                     </form>
                 </div>
