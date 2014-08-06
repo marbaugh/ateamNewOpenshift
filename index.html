@@ -155,12 +155,12 @@
 
                 <div class="col-lg-4 col-md-4">
                     <h2>Book a Session</h2>
-                    <form name="userInput" id="userInput">
+                    <form name="userInput" id="userInput" action="send_mail.php">
                         Name: <input type="text" style='width:100%' name="name" data-validation="length" data-validation-length="1-50" data-validation-error-msg="You did not enter a valid name"><br />
                         E-mail: <input type="text" style='width:100%' name="email" data-validation="email" data-validation-error-msg="You did not enter a valid e-mail"><br />
                         Date: <input type="text" style='width:100%' id="datepicker" name='date' data-validation="required" data-validation-error-msg="You did not choose a date"><br />
                         Comment:<br /><textarea name='comments' style='width:100%' id='comments' /></textarea><br />
-                       <input type="submit" value="Submit" class="button" style="float: right;">
+                       <input type="submit" value="Submit" style="float: right;">
                     </form>
                 </div>
             </div>
@@ -236,16 +236,23 @@
 
 
     <script>
-        $(document).ready( function() {
-            $('.button').on("submit", function(){
-                var f = $('#userInput');
-                $.ajax({
-                    type: "POST",
-                    url: "send_mail.php",
-                    data: f.serialize()
+    $(function() {
+                $("#userInput").on("submit", function(e) {
+                    e.preventDefault();
+                    $.ajax({
+                        url: $(this).attr("action"),
+                        type: 'POST',
+                        data: $(this).serialize(),
+                        beforeSend: function() {
+                            $("#message").html("sending...");
+                        },
+                        success: function(data) {
+                            $("#message").hide();
+                            $("#response").html(data);
+                        }
+                    });
                 });
             });
-        });
 
         $.validate({
             validateOnBlur : false, // disable validation when input looses focus
