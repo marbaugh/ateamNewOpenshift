@@ -249,10 +249,10 @@
                         success: function(data) {
                             $("#message").hide();
                             $("#response").html(data);
+                            $('#userInput :input').val('');
                         }
                     });
                 });
-            document.getElementById("userInput").reset();
             });
 
         $.validate({
