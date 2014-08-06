@@ -156,11 +156,11 @@
                 <div class="col-lg-4 col-md-4">
                     <h2>Book a Session</h2>
                     <form name="userInput" id="userInput" action="send_mail.php" method="post">
-                        Name: <input type="text" style='width:100%' name="name" required placeholder="Enter name"><br />
-                        E-mail: <input type="email" style='width:100%' name="email" required placeholder="Enter email"><br />
-                        Date: <input type="text" style='width:100%' id="datepicker" name='date' required placeholder="Choose a Date"><br />
+                        Name: <input type="text" style='width:100%' name="name" data-validation="required"><br />
+                        E-mail: <input type="text" style='width:100%' name="email" data-validation="required" data-validation="email"><br />
+                        Date: <input type="text" style='width:100%' id="datepicker" name='date' data-validation="required"><br />
                         Comment:<br /><textarea name='comments' style='width:100%' id='comments' /></textarea><br />
-                       <input type="submit" value="Submit" style="float: right  ;">
+                       <input type="submit" value="Submit" style="float: right;">
                     </form>
                 </div>
             </div>
@@ -232,6 +232,9 @@
     <script src="js/modern-business.js"></script>
     <script src="js/jquery-1.11.1.js"></script>
     <script src="js/jquery-ui-1.11.0/jquery-ui.js"></script>
+    <script src="js/jQuery-Form-Validator-master/form-validator/jquery.form-validator.js"></script>
+
+
     <script>
         // Logic to filter on only Monday and Wednesdays for the date/time picker
         var mondayWednesdayFilter = function( currentDateTime ){
