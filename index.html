@@ -153,9 +153,9 @@
 
                 </div>
 
-                <div class="col-lg-4 col-md-4">
+                <div id="userForm" class="col-lg-4 col-md-4">
                     <h2>Book a Session</h2>
-                    <form name="userInput" id="userInput" action="send_mail.php">
+                    <form name="userInput" id="userInput" onsubmit="sendForm(); return false;" action="" method="POST">
                         Name: <input type="text" style='width:100%' name="name" placeholder="Enter Name" data-validation="length" data-validation-length="1-50" data-validation-error-msg="You did not enter a valid name"><br />
                         E-mail: <input type="text" style='width:100%' name="email" placeholder="Enter E-mail" data-validation="email" data-validation-error-msg="You did not enter a valid e-mail"><br />
                         Date: <input type="text" style='width:100%' id="datepicker" name='date' placeholder="Choose a Session Date" data-validation="required" data-validation-error-msg="You did not choose a date"><br />
@@ -163,9 +163,13 @@
                        <input type="submit" value="Submit" style="float: right;">
                     </form>
                 </div>
+            
+            <div id= "thanks" style="display: none "class="col-lg-4 col-md-4">
+                <h5> Thanks for your request! </h5>
+                <button id="showForm">Return to Form</button>
             </div>
+</div>
             <!-- /.row -->
-
         </div>
         <!-- /.container -->
 
@@ -236,10 +240,35 @@
 
 
     <script>
-    $(function() {
-                $("#userInput").on("submit", function(e) {
-                    e.preventDefault();
-                    $.ajax({
+    // $(function() {
+            //     $("#userInput").on("submit", function(e) {
+            //         e.preventDefault();
+                    // $.ajax({
+                    //     url: $(this).attr("action"),
+                    //     type: 'POST',
+                    //     data: $(this).serialize(),
+                    //     beforeSend: function() {
+                    //         $("#message").html("sending...");
+                    //     },
+                    //     success: function(data) {
+                    //         $("#message").hide();
+                    //         $("#response").html(data);
+                    //     }
+                    // });
+            //     });
+            // });
+
+        // $.validate({
+        //     validateOnBlur : false, // disable validation when input looses focus
+        //     errorMessagePosition : 'top', // Instead of 'element' which is default
+        //     scrollToTopOnError : false // Set this property to true if you have a long form
+        // });
+$.validate({
+    onError : function() {
+        return false;
+    },
+    onSuccess : function() {
+                            $.ajax({
                         url: $(this).attr("action"),
                         type: 'POST',
                         data: $(this).serialize(),
@@ -251,14 +280,28 @@
                             $("#response").html(data);
                         }
                     });
+      $( "#userForm" ).hide();
+      $( "#thanks" ).show( "fast" );
+      return false;
+    }
+    });
+     
+            $(function() {
+                function runEffect() {
+                    $( "#userForm" ).effect( "fade");
+                    $( "#thanks" ).show( "slow" );
+                };
+                function showEffect() {
+                    $( "#thanks" ).hide();
+                    $( "#userForm" ).effect( "fade");
+                };
+                $( "#button" ).click(function() {
+                    runEffect();
+                });
+                $( "#showForm" ).click(function() {
+                    showEffect();
                 });
             });
-
-        $.validate({
-            validateOnBlur : false, // disable validation when input looses focus
-            errorMessagePosition : 'top', // Instead of 'element' which is default
-            scrollToTopOnError : false // Set this property to true if you have a long form
-        });
 
         // Logic to filter on only Monday and Wednesdays for the date/time picker
         var mondayWednesdayFilter = function( currentDateTime ){
@@ -271,5 +314,6 @@
                 beforeShowDay: mondayWednesdayFilter});
         });
     </script>
+
 </body>
 </html>
