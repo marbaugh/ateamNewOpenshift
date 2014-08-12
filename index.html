@@ -240,30 +240,10 @@
 
 
 <script>
-    // $(function() {
-            //     $("#userInput").on("submit", function(e) {
-            //         e.preventDefault();
-                    // $.ajax({
-                    //     url: $(this).attr("action"),
-                    //     type: 'POST',
-                    //     data: $(this).serialize(),
-                    //     beforeSend: function() {
-                    //         $("#message").html("sending...");
-                    //     },
-                    //     success: function(data) {
-                    //         $("#message").hide();
-                    //         $("#response").html(data);
-                    //     }
-                    // });
-            //     });
-            // });
-
-        // $.validate({
-        //     validateOnBlur : false, // disable validation when input looses focus
-        //     errorMessagePosition : 'top', // Instead of 'element' which is default
-        //     scrollToTopOnError : false // Set this property to true if you have a long form
-        // });
 $.validate({
+    validateOnBlur : false,
+    errorMessagePosition : 'top',
+    scrollToTopOnError : false,
     onError : function() {
         return false;
     },
@@ -293,6 +273,7 @@ $(function() {
     };
     function showEffect() {
         $( "#thanks" ).hide();
+ 	    $("#userInput")[0].reset();
         $( "#userForm" ).effect( "fade");
     };
     $( "#button" ).click(function() {
