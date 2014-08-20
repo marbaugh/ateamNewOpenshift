@@ -155,7 +155,7 @@
 
             <div id="userForm" class="col-lg-4 col-md-4">
                 <h2>Book a Session</h2>
-                <form name="userInput" id="userInput" onsubmit="sendForm(); return false;" action="" method="POST">
+                <form name="userInput" id="userInput" action="" method="POST">
                     Name: <input type="text" style='width:100%' name="name" placeholder="Enter Name" data-validation="length" data-validation-length="1-50" data-validation-error-msg="You did not enter a valid name"><br />
                     E-mail: <input type="text" style='width:100%' name="email" placeholder="Enter E-mail" data-validation="email" data-validation-error-msg="You did not enter a valid e-mail"><br />
                     Date: <input type="text" style='width:100%' id="datepicker" name='date' placeholder="Choose a Session Date" data-validation="required" data-validation-error-msg="You did not choose a date"><br />
@@ -249,9 +249,9 @@ $.validate({
     },
     onSuccess : function() {
         $.ajax({
-            url: $(this).attr("action"),
+            url: 'send_mail.php',
             type: 'POST',
-            data: $(this).serialize(),
+            data: $("#userInput").serialize(),
             beforeSend: function() {
                 $("#message").html("sending...");
             },
