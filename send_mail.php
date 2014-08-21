@@ -20,7 +20,7 @@
     $port     = "465";
 
     // Set up the request subject and mail headers
-    $req_subject = "A-Team Reservation Request";
+    $req_subject = "Session Request: ".($customer_name)." - ".($requested_date);
     $req_headers = array(
         "From"    => $ateam_email,
         "To"      => $ateam_email,
@@ -37,7 +37,7 @@
     $req_msg .= "Comments: ".($comments)."\n";
 
     // Set up the confirmation subject and mail headers
-    $rep_subject = "Confirmation of Your Request";
+    $rep_subject = "Confirmation of Your Request on ".($requested_date);
     $rep_headers = array(
         "From"    => $ateam_email,
         "To"      => $customer_email,
