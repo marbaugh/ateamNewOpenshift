@@ -14,6 +14,7 @@
 
     <!-- Add custom CSS here -->
     <link href="css/modern-business.css" rel="stylesheet">
+    <link href="css/blueimp-image-gallery.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="js/jquery-ui-1.11.0/jquery-ui.css" rel="stylesheet">
 
@@ -186,24 +187,62 @@
                 <h2>Our Talented Vaulters</h2>
                 <hr>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-                <img class="img-responsive img-home-portfolio" src="img/vaulters/Steve.jpg">
+            
+ <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-                <img class="img-responsive img-home-portfolio" src="img/vaulters/Karlina.jpg">
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-                <img class="img-responsive img-home-portfolio" src="img/vaulters/Jane.jpg">
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-                <img class="img-responsive img-home-portfolio" src="img/vaulters/Maggie.jpg">
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-                <img class="img-responsive img-home-portfolio" src="img/vaulters/Bobby.jpg">
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-                <img class="img-responsive img-home-portfolio" src="img/vaulters/Brynn.jpg">
-            </div>
+        </div>
+    </div>
+</div>
+
+<div id="links">
+    <a href="img/vaulters/large/Bobby.jpg" title="Bobby" data-gallery>
+        <img src="img/vaulters/thumbnails/Bobby.jpg" alt="Bobby">
+    </a>
+    <a href="img/vaulters/large/Brynn.jpg" title="Brynn" data-gallery>
+        <img src="img/vaulters/thumbnails/Brynn.jpg" alt="Brynn">
+    </a>
+    <a href="img/vaulters/large/Jane.jpg" title="Jane" data-gallery>
+        <img src="img/vaulters/thumbnails/Jane.jpg" alt="Jane">
+    </a>
+    <a href="img/vaulters/large/Karlina.jpg" title="Karlina" data-gallery>
+        <img src="img/vaulters/thumbnails/Karlina.jpg" alt="Karlina">
+    </a>
+    <a href="img/vaulters/large/Maggie.jpg" title="Maggie" data-gallery>
+        <img src="img/vaulters/thumbnails/Maggie.jpg" alt="Maggie">
+    </a>
+    <a href="img/vaulters/large/Steve.jpg" title="Steve" data-gallery>
+        <img src="img/vaulters/thumbnails/Steve.jpg" alt="Steve">
+    </a>
+</div>  
         </div>
         <!-- /.row -->
 
@@ -235,6 +274,7 @@
 <script src="js/jquery-1.11.1.js"></script>
 <script src="js/jquery-ui-1.11.0/jquery-ui.js"></script>
 <script src="js/bootstrap.js"></script>
+<script src="js/bootstrap-image-gallery.js"></script>
 <script src="js/jQuery-Form-Validator-master/form-validator/jquery.form-validator.js"></script>
 
 <script>
