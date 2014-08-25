@@ -64,8 +64,7 @@
            <div class="item">
             <div class="fill" style="background-image:url('img/slides/Brynn.jpg');"></div>
             <div class="carousel-caption">
-               <!--  <h1>Additional Layout Options at <a href="http://startbootstrap.com">http://startbootstrap.com</a> -->
-           </h1>
+               <!--  <h1>Additional Layout Options at <a href="http://startbootstrap.com">http://startbootstrap.com</a> </h1>-->
        </div>
    </div>
 </div>
@@ -232,14 +231,16 @@
 <!-- /.container -->
 
 <!-- JavaScript -->
-<script src="js/bootstrap.js"></script>
 <script src="js/modern-business.js"></script>
 <script src="js/jquery-1.11.1.js"></script>
 <script src="js/jquery-ui-1.11.0/jquery-ui.js"></script>
+<script src="js/bootstrap.js"></script>
 <script src="js/jQuery-Form-Validator-master/form-validator/jquery.form-validator.js"></script>
 
-
 <script>
+//Manually start carousel
+$('.carousel').carousel();
+
 $.validate({
     validateOnBlur : false,
     errorMessagePosition : 'top',
