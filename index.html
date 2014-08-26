@@ -35,7 +35,19 @@
                 <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js  -->
                 <a class="navbar-brand" href="">A-Team Vaulting</a>
             </div>
-
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#experience">Experience</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#userForm">Book A Session</a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <!-- /.container -->
     </nav>
@@ -79,33 +91,21 @@
 </a>
 </div>
 <!--Slider ends -->
-
-
-<div class="section-colored text-center">
-
-    <div class="container">
-
-        <div class="row">
-            <div class="col-lg-12">
-                <h2>A-Team Vaulting is a pole vault coaching service in the Baltimore area.  We provide coaching and facilities for pole vaulters of all levels.</h2>
-                <!-- <p>additional text</p> -->
-                <hr>
+<div class="container">
+  <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1 class="page-header">A-Team Vaulting is a pole vault coaching service in the Baltimore area.  We provide coaching and facilities for pole vaulters of all levels.</h1>
             </div>
-        </div>
-        <!-- /.row -->
-
-    </div>
-    <!-- /.container -->
-
-</div>
-<!-- /.section-colored -->
-
+  </div>
+  <!-- /.row -->
+</div>
+<!-- /.container -->
 
 <div class="section">
 
     <div class="container">
 
-        <div class="row">
+        <div id="experience" class="row">
             <div class="col-lg-4 col-md-4">
                 <img class="img-circle img-responsive" src="img/circles/experience2.png">
                 <h3>Experience</h3>
@@ -138,39 +138,55 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-lg-4 col-md-4">
-                <h2>Contact Us</h2>
-                <p>Use the form or our contact info to set up a coaching appointment. We look forward to hearing from you!</p>
-                <ul>
-                    <li>Phone: (443) 574-4ATV (4288) </li>
-                    <li>Email: ateamvaulting@gmail.com</li>
-
-                </ul>
+            <div id="contact" class="col-lg-4 col-md-4">
+                <div class="panel panel-default">
+                <div class="panel-heading"><h4>Contact</h4></div>
+                <div class="panel-body">
+                  <p>Use the form or our contact info to set up a coaching appointment. We look forward to hearing from you!</p>
+                  <ul>
+				            <span class="glyphicon glyphicon-earphone"></span> (443) 574-4ATV (4288) </br>
+                    <span class="glyphicon glyphicon-envelope"></span> <a href="mailto:ateamvaulting@gmail.com?Subject=A-Team%20Inquiry" target="_top"> Send EMail</a>
+                  </ul>
+               </div>
+             </div>
             </div>
-
-            <div class="col-lg-4 col-md-4">
-                <h2>Current Sessions</h2>
-                <p>Summer vault sessions are taking place Monday and Wednesday evenings from 5:30-6:30 pm.  The sessions take place on the outdoor track at Towson University's Johnny Unitas Stadium.  Please fill out the form to request a session or obtain session information.</p>
-
-            </div>
-
-            <div id="userForm" class="col-lg-4 col-md-4">
-                <h2>Book a Session</h2>
-                <form name="userInput" id="userInput" action="" method="POST">
+           
+           <div id="userForm" class="col-lg-4 col-md-4">
+           <div class="panel panel-default">
+           <div class="panel-heading"> <h4>Book a Session</h4></div>
+           <div class="panel-body">
+             <form name="userInput" id="userInput" action="" method="POST">
                     Name: <input type="text" style='width:100%' name="name" placeholder="Enter Name" data-validation="length" data-validation-length="1-50" data-validation-error-msg="You did not enter a valid name"><br />
                     E-mail: <input type="text" style='width:100%' name="email" placeholder="Enter E-mail" data-validation="email" data-validation-error-msg="You did not enter a valid e-mail"><br />
                     Date: <input type="text" style='width:100%' id="datepicker" name='date' placeholder="Choose a Session Date" data-validation="required" data-validation-error-msg="You did not choose a date"><br />
                     Comment:<br /><textarea name='comments' style='width:100%' id='comments' placeholder="Additional Comments or Questions" /></textarea><br />
                     <input type="submit" value="Submit" style="float: right;">
-                </form>
+             </form>
             </div>
+            </div>
+         </div>
             
             <div id= "thanks" style="display: none "class="col-lg-4 col-md-4">
                 <h5> Thanks for your request! </h5>
                 <button id="showForm">Return to Form</button>
             </div>
-        </div>
-        <!-- /.row -->
+
+            <div class="col-lg-4 col-md-4">
+            <div class="panel panel-default">
+            <div class="panel-heading"><h4>Current Activities</h4></div>
+            <div class="panel-body">
+                <p>Summer vault sessions are taking place Monday and Wednesday evenings.
+	              <ul>
+	                <span class="glyphicon glyphicon-calendar"></span> 6:30-7:30 </br>
+	                <span class="glyphicon glyphicon-globe"></span> Towson University's Johnny Unitas Stadium
+                </ul>
+               </p>
+           </div>
+         </div>
+      </div>
+
+     </div>
+     <!-- /.row -->
     </div>
     <!-- /.container -->
 
@@ -184,9 +200,8 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Our Talented Vaulters</h2>
-                <hr>
+            <div class="col-lg-12 text-cente text-center">
+                <h2 class="page-header">Our Talented Vaulters</h2>
             </div>
             
  <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
