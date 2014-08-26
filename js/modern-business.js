@@ -1,3 +1,8 @@
+//Fix for anchor links with header offset
+var shiftWindow = function() { scrollBy(0, -50) };
+if (location.hash) shiftWindow();
+window.addEventListener("hashchange", shiftWindow);
+
 // Activates the Carousel
 $('.carousel').carousel({
   interval: 5000
