@@ -79,11 +79,11 @@
             <div class="fill" style="background-image:url('img/slides/Brynn.jpg');"></div>
             <div class="carousel-caption">
                <!--  <h1>Additional Layout Options at <a href="http://startbootstrap.com">http://startbootstrap.com</a> </h1>-->
+           </div>
        </div>
    </div>
-</div>
-<!-- Controls -->
-<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+   <!-- Controls -->
+   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
     <span class="icon-prev"></span>
 </a>
 <a class="right carousel-control" href="#myCarousel" data-slide="next">
@@ -91,14 +91,16 @@
 </a>
 </div>
 <!--Slider ends -->
-<div class="container">
+
+<div class="container">
   <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1 class="page-header">A-Team Vaulting is a pole vault coaching service in the Baltimore area.  We provide coaching and facilities for pole vaulters of all levels.</h1>
-            </div>
-  </div>
-  <!-- /.row -->
-</div>
+    <div class="col-lg-12 text-center">
+        <h1 class="page-header">A-Team Vaulting is a pole vault coaching service in the Baltimore area.  We provide coaching and facilities for pole vaulters of all levels.</h1>
+    </div>
+</div>
+<!-- /.row -->
+
+</div>
 <!-- /.container -->
 
 <div class="section">
@@ -140,55 +142,55 @@
         <div class="row">
             <div id="contact" class="col-lg-4 col-md-4">
                 <div class="panel panel-default">
-                <div class="panel-heading"><h4>Contact</h4></div>
-                <div class="panel-body">
-                  <p>Use the form or our contact info to set up a coaching appointment. We look forward to hearing from you!</p>
-                  <ul>
-				            <span class="glyphicon glyphicon-earphone"></span> (443) 574-4ATV (4288) </br>
-                    <span class="glyphicon glyphicon-envelope"></span> <a href="mailto:ateamvaulting@gmail.com?Subject=A-Team%20Inquiry" target="_top"> Send EMail</a>
-                  </ul>
-               </div>
-             </div>
+                    <div class="panel-heading"><h4>Contact</h4></div>
+                    <div class="panel-body">
+                      <p>Use the form or our contact info to set up a coaching appointment. We look forward to hearing from you!</p>
+                      <ul>
+                        <span class="glyphicon glyphicon-earphone"></span> (443) 574-4ATV (4288) </br>
+                        <span class="glyphicon glyphicon-envelope"></span> <a href="mailto:ateamvaulting@gmail.com?Subject=A-Team%20Inquiry" target="_top"> Send EMail</a>
+                    </ul>
+                </div>
             </div>
-           
-           <div id="userForm" class="col-lg-4 col-md-4">
+        </div>
+
+        <div id="userForm" class="col-lg-4 col-md-4">
            <div class="panel panel-default">
-           <div class="panel-heading"> <h4>Book a Session</h4></div>
-           <div class="panel-body">
-             <form name="userInput" id="userInput" action="" method="POST">
+               <div class="panel-heading"> <h4>Book a Session</h4></div>
+               <div class="panel-body">
+                 <form name="userInput" id="userInput" action="" method="POST">
                     Name: <input type="text" style='width:100%' name="name" placeholder="Enter Name" data-validation="length" data-validation-length="1-50" data-validation-error-msg="You did not enter a valid name"><br />
                     E-mail: <input type="text" style='width:100%' name="email" placeholder="Enter E-mail" data-validation="email" data-validation-error-msg="You did not enter a valid e-mail"><br />
                     Date: <input type="text" style='width:100%' id="datepicker" name='date' placeholder="Choose a Session Date" data-validation="required" data-validation-error-msg="You did not choose a date"><br />
                     Comment:<br /><textarea name='comments' style='width:100%' id='comments' placeholder="Additional Comments or Questions" /></textarea><br />
                     <input type="submit" value="Submit" style="float: right;">
-             </form>
+                </form>
             </div>
-            </div>
-         </div>
-            
-            <div id= "thanks" style="display: none "class="col-lg-4 col-md-4 text-center">
-                <h5> Thanks for your request! </h5>
-                <button id="showForm">Return to Form</button>
-            </div>
+        </div>
+    </div>
 
-            <div class="col-lg-4 col-md-4">
-            <div class="panel panel-default">
+    <div id= "thanks" style="display: none "class="col-lg-4 col-md-4 text-center">
+        <h5> Thanks for your request! </h5>
+        <button id="showForm">Return to Form</button>
+    </div>
+
+    <div class="col-lg-4 col-md-4">
+        <div class="panel panel-default">
             <div class="panel-heading"><h4>Current Activities</h4></div>
             <div class="panel-body">
                 <p>Summer vault sessions are taking place Monday and Wednesday evenings.
-	              <ul>
-	                <span class="glyphicon glyphicon-calendar"></span> 6:30-7:30 </br>
-	                <span class="glyphicon glyphicon-globe"></span> Towson University's Johnny Unitas Stadium
-                </ul>
-               </p>
-           </div>
+                   <ul>
+                     <span class="glyphicon glyphicon-calendar"></span> 6:30-7:30 </br>
+                     <span class="glyphicon glyphicon-globe"></span> Towson University's Johnny Unitas Stadium
+                 </ul>
+             </p>
          </div>
-      </div>
-
      </div>
-     <!-- /.row -->
-    </div>
-    <!-- /.container -->
+ </div>
+
+</div>
+<!-- /.row -->
+</div>
+<!-- /.container -->
 
 </div>
 <!-- /.section-colored -->
@@ -203,62 +205,81 @@
             <div class="col-lg-12 text-cente text-center">
                 <h2 class="page-header">Our Talented Vaulters</h2>
             </div>
-            
- <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
-<div id="blueimp-gallery" class="blueimp-gallery">
-    <!-- The container for the modal slides -->
-    <div class="slides"></div>
-    <!-- Controls for the borderless lightbox -->
-    <h3 class="title"></h3>
-    <a class="prev">‹</a>
-    <a class="next">›</a>
-    <a class="close">×</a>
-    <a class="play-pause"></a>
-    <ol class="indicator"></ol>
-    <!-- The modal dialog, which will be used to wrap the lightbox content -->
-    <div class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title"></h4>
-                </div>
-                <div class="modal-body next"></div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default pull-left prev">
-                        <i class="glyphicon glyphicon-chevron-left"></i>
-                        Previous
-                    </button>
-                    <button type="button" class="btn btn-primary next">
-                        Next
-                        <i class="glyphicon glyphicon-chevron-right"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
-<div id="links">
-    <a href="img/vaulters/large/Bobby.jpg" title="Bobby" data-gallery>
-        <img src="img/vaulters/thumbnails/Bobby.jpg" alt="Bobby">
-    </a>
-    <a href="img/vaulters/large/Brynn.jpg" title="Brynn" data-gallery>
-        <img src="img/vaulters/thumbnails/Brynn.jpg" alt="Brynn">
-    </a>
-    <a href="img/vaulters/large/Jane.jpg" title="Jane" data-gallery>
-        <img src="img/vaulters/thumbnails/Jane.jpg" alt="Jane">
-    </a>
-    <a href="img/vaulters/large/Karlina.jpg" title="Karlina" data-gallery>
-        <img src="img/vaulters/thumbnails/Karlina.jpg" alt="Karlina">
-    </a>
-    <a href="img/vaulters/large/Maggie.jpg" title="Maggie" data-gallery>
-        <img src="img/vaulters/thumbnails/Maggie.jpg" alt="Maggie">
-    </a>
-    <a href="img/vaulters/large/Steve.jpg" title="Steve" data-gallery>
-        <img src="img/vaulters/thumbnails/Steve.jpg" alt="Steve">
-    </a>
-</div>  
+            <div id="links" class="links">
+                <a href="img/vaulters/large/large-1.jpg" title="" data-gallery>
+                    <img src="img/vaulters/thumbnails/thumbnail-1.jpg" alt="">
+                </a>
+                <a href="img/vaulters/large/large-2.jpg" title="" data-gallery>
+                    <img src="img/vaulters/thumbnails/thumbnail-2.jpg" alt="">
+                </a>
+                <a href="img/vaulters/large/large-3.jpg" title="" data-gallery>
+                    <img src="img/vaulters/thumbnails/thumbnail-3.jpg" alt="">
+                </a>
+                <a href="img/vaulters/large/large-4.jpg" title="" data-gallery>
+                    <img src="img/vaulters/thumbnails/thumbnail-4.jpg" alt="">
+                </a>
+                <a href="img/vaulters/large/large-5.jpg" title="" data-gallery>
+                    <img src="img/vaulters/thumbnails/thumbnail-5.jpg" alt="">
+                </a>
+                <a href="img/vaulters/large/large-6.jpg" title="" data-gallery>
+                    <img src="img/vaulters/thumbnails/thumbnail-6.jpg" alt="">
+                </a>
+                <a href="img/vaulters/large/large-7.jpg" title="" data-gallery>
+                    <img src="img/vaulters/thumbnails/thumbnail-7.jpg" alt="">
+                </a>
+                <a href="img/vaulters/large/large-8.jpg" title="" data-gallery>
+                    <img src="img/vaulters/thumbnails/thumbnail-8.jpg" alt="">
+                </a>
+                <a href="img/vaulters/large/large-9.jpg" title="" data-gallery>
+                    <img src="img/vaulters/thumbnails/thumbnail-9.jpg" alt="">
+                </a>
+                <a href="img/vaulters/large/large-10.jpg" title="" data-gallery>
+                    <img src="img/vaulters/thumbnails/thumbnail-10.jpg" alt="">
+                </a>
+                <a href="img/vaulters/large/large-11.jpg" title="" data-gallery>
+                    <img src="img/vaulters/thumbnails/thumbnail-11.jpg" alt="">
+                </a>
+                <a href="img/vaulters/large/large-12.jpg" title="" data-gallery>
+                    <img src="img/vaulters/thumbnails/thumbnail-12.jpg" alt="">
+                </a>
+                <a href="img/vaulters/large/large-13.jpg" title="" data-gallery>
+                    <img src="img/vaulters/thumbnails/thumbnail-13.jpg" alt="">
+                </a>
+                <a href="img/vaulters/large/large-14.jpg" title="" data-gallery>
+                    <img src="img/vaulters/thumbnails/thumbnail-14.jpg" alt="">
+                </a>
+                <a href="img/vaulters/large/large-15.jpg" title="" data-gallery>
+                    <img src="img/vaulters/thumbnails/thumbnail-15.jpg" alt="">
+                </a>
+                <a href="img/vaulters/large/large-16.jpg" title="" data-gallery>
+                    <img src="img/vaulters/thumbnails/thumbnail-16.jpg" alt="">
+                </a>
+                <a href="img/vaulters/large/large-17.jpg" title="" data-gallery>
+                    <img src="img/vaulters/thumbnails/thumbnail-17.jpg" alt="">
+                </a>
+                <a href="img/vaulters/large/large-18.jpg" title="" data-gallery>
+                    <img src="img/vaulters/thumbnails/thumbnail-18.jpg" alt="">
+                </a>
+                <a href="img/vaulters/large/large-19.jpg" title="" data-gallery>
+                    <img src="img/vaulters/thumbnails/thumbnail-19.jpg" alt="">
+                </a>
+                <a href="img/vaulters/large/large-20.jpg" title="" data-gallery>
+                    <img src="img/vaulters/thumbnails/thumbnail-20.jpg" alt="">
+                </a>
+                <a href="img/vaulters/large/large-21.jpg" title="" data-gallery>
+                    <img src="img/vaulters/thumbnails/thumbnail-21.jpg" alt="">
+                </a>
+            </div>  
+            <div id="blueimp-gallery" class="blueimp-gallery">
+                <div class="slides"></div>
+                <h3 class="title"></h3>
+                <a class="prev">‹</a>
+                <a class="next">›</a>
+                <a class="close">×</a>
+                <a class="play-pause"></a>
+                <ol class="indicator"></ol>
+            </div>
         </div>
         <!-- /.row -->
 
@@ -329,7 +350,7 @@ $(function() {
     };
     function showEffect() {
         $( "#thanks" ).hide();
- 	    $("#userInput")[0].reset();
+        $("#userInput")[0].reset();
         $( "#userForm" ).effect( "fade");
     };
     $( "#button" ).click(function() {
