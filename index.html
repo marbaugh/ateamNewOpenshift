@@ -139,36 +139,55 @@
 
         <div class="row">
             <div id="contact" class="col-lg-4 col-md-4">
-                <h2>Contact Us</h2>
-                <p>Use the form or our contact info to set up a coaching appointment. We look forward to hearing from you!</p>
-                <ul>
-                    <li>Phone: (443) 574-4ATV (4288) </li>
-                    <li>Email: ateamvaulting@gmail.com</li>
-
-                </ul>
+                <div class="panel panel-default">
+                <div class="panel-heading"><h4>Contact</h4></div>
+                <div class="panel-body">
+                  <p>Use the form or our contact info to set up a coaching appointment. We look forward to hearing from you!</p>
+                  <ul>
+				            <span class="glyphicon glyphicon-earphone"></span> (443) 574-4ATV (4288) </br>
+                    <span class="glyphicon glyphicon-envelope"></span> <a href="mailto:ateamvaulting@gmail.com?Subject=A-Team%20Inquiry" target="_top"> Send EMail</a>
+                  </ul>
+                <object type="application/x-shockwave-flash" data="https://clients4.google.com/voice/embed/webCallButton" width="230" height="85"><param name="movie" value="https://clients4.google.com/voice/embed/webCallButton" /><param name="wmode" value="transparent" /><param name="FlashVars" value="id=227c3ba406d27e17209a0a14f84a2b0f625c6d25&style=0" /></object>
+               </div>
+             </div>
             </div>
-
-            <div class="col-lg-4 col-md-4">
-                <h2>Current Sessions</h2>
-                <p>Summer vault sessions are taking place Monday and Wednesday evenings from 5:30-6:30 pm.  The sessions take place on the outdoor track at Towson University's Johnny Unitas Stadium.  Please fill out the form to request a session or obtain session information.</p>
-
-            </div>
-
-            <div id="userForm" class="col-lg-4 col-md-4">
-                <h2>Book a Session</h2>
-                <form name="userInput" id="userInput" action="" method="POST">
+           
+           <div id="userForm" class="col-lg-4 col-md-4">
+           <div class="panel panel-default">
+           <div class="panel-heading"> <h4>Book a Session</h4></div>
+           <div class="panel-body">
+             <form name="userInput" id="userInput" action="" method="POST">
                     Name: <input type="text" style='width:100%' name="name" placeholder="Enter Name" data-validation="length" data-validation-length="1-50" data-validation-error-msg="You did not enter a valid name"><br />
                     E-mail: <input type="text" style='width:100%' name="email" placeholder="Enter E-mail" data-validation="email" data-validation-error-msg="You did not enter a valid e-mail"><br />
                     Date: <input type="text" style='width:100%' id="datepicker" name='date' placeholder="Choose a Session Date" data-validation="required" data-validation-error-msg="You did not choose a date"><br />
                     Comment:<br /><textarea name='comments' style='width:100%' id='comments' placeholder="Additional Comments or Questions" /></textarea><br />
                     <input type="submit" value="Submit" style="float: right;">
-                </form>
+             </form>
             </div>
+            </div>
+         </div>
             
             <div id= "thanks" style="display: none "class="col-lg-4 col-md-4">
                 <h5> Thanks for your request! </h5>
                 <button id="showForm">Return to Form</button>
             </div>
+
+            <div class="col-lg-4 col-md-4">
+            <div class="panel panel-default">
+            <div class="panel-heading"><h4>Current Activities</h4></div>
+            <div class="panel-body">
+                <p>Summer vault sessions are taking place Monday and Wednesday evenings.
+	              <ul>
+	                <span class="glyphicon glyphicon-calendar"></span> 6:30-7:30 </br>
+	                <span class="glyphicon glyphicon-globe"></span> Towson University's Johnny Unitas Stadium
+                </ul>
+               </p>
+           </div>
+         </div>
+       </div>
+
+
+
         </div>
         <!-- /.row -->
     </div>
