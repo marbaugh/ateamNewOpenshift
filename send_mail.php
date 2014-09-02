@@ -37,7 +37,7 @@
     $req_msg .= "Comments: ".($comments)."\n";
 
     // Set up the confirmation subject and mail headers
-    $rep_subject = "Confirmation of Your Request on ".($requested_date);
+    $rep_subject = "Confirmation of Your Request for ".($requested_date);
     $rep_headers = array(
         "From"    => $ateam_email,
         "To"      => $customer_email,
