@@ -9,6 +9,7 @@
     // Fields from the HTML POST
     $customer_name = $_POST["name"];
     $customer_email = $_POST["email"];
+    $customer_phone = $_POST["phone"];
     $requested_date = $_POST["date"];
     $comments = $_POST["comments"];
 
@@ -33,6 +34,7 @@
     $req_msg .= "A vaulter has requested a session!\n";
     $req_msg .= "Name: ".($customer_name)."\n";
     $req_msg .= "Email: ".($customer_email)."\n";
+    $req_msg .= "Phone: ".($customer_phone)."\n";
     $req_msg .= "Date: ".($requested_date)."\n";
     $req_msg .= "Comments: ".($comments)."\n";
 
