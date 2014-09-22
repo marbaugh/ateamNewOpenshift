@@ -35,7 +35,7 @@
     $req_msg .= "Name: ".($customer_name)."\n";
     $req_msg .= "Email: ".($customer_email)."\n";
     $req_msg .= "Phone: ".($customer_phone)."\n";
-    $req_msg .= "When: ".($requested_date)."6:30pm \n";
+    $req_msg .= "When: ".($requested_date)." 6:30pm \n";
     $req_msg .= "Comments: ".($comments)."\n";
 
     // Set up the confirmation subject and mail headers
