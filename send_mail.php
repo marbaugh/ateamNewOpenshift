@@ -49,7 +49,7 @@
     // Setup auto-reply message to customer
     $rep_msg = "";
     $rep_msg .= "Thank you for your session request!  We will see you on ";
-    $rep_msg .= ($requested_date)."\n\n";
+    $rep_msg .= ($requested_date).".\n\n";
     $rep_msg .= "Thanks,\n";
     $rep_msg .= "A-Team Vaulting";
  
