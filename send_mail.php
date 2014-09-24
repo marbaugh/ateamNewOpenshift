@@ -23,7 +23,7 @@
     // Set up the request subject and mail headers
     $req_subject = "Session Request: ".($customer_name)." - ".($requested_date);
     $req_headers = array(
-        "From"    => $ateam_email,
+        "From"    => $customer_email,
         "To"      => $ateam_email,
         "Subject" => $req_subject
     );
