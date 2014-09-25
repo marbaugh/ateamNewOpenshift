@@ -15,7 +15,6 @@
 
     // Identify the mail server, username, password, and port
     $ateam_email = "ateamvaulting@gmail.com";
-    $marbaugh = "marbaugh@gmail.com";
     $server   = "ssl://smtp.gmail.com";
     $username = $ateam_email;
     $password = "MandKBestCoachesEver";
@@ -24,8 +23,9 @@
     // Set up the request subject and mail headers
     $req_subject = "Session Request: ".($customer_name)." - ".($requested_date);
     $req_headers = array(
-        "From"    => $marbaugh,
+        "From"    => $ateam_email,
         "To"      => $ateam_email,
+        "Reply-To" => $customer_email,
         "Subject" => $req_subject
     );
 
