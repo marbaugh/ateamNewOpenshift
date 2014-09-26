@@ -15,17 +15,16 @@
 
     // Identify the mail server, username, password, and port
     $ateam_email = "ateamvaulting@gmail.com";
-    $server   = "ssl://smtp.sendgrid.net";
-    $username = "marbaugh";
-    $password = "";
+    $server   = "ssl://smtp.gmail.com";
+    $username = $ateam_email;
+    $password = "ATeam_Rocks";
     $port     = "465";
 
     // Set up the request subject and mail headers
     $req_subject = "Session Request: ".($customer_name)." - ".($requested_date);
     $req_headers = array(
-        "From"    => $customer_email,
+        "From"    => $ateam_email,
         "To"      => $ateam_email,
-        "Reply-To" => $customer_email,
         "Subject" => $req_subject
     );
 
@@ -36,7 +35,7 @@
     $req_msg .= "Name: ".($customer_name)."\n";
     $req_msg .= "Email: ".($customer_email)."\n";
     $req_msg .= "Phone: ".($customer_phone)."\n";
-    $req_msg .= "When: ".($requested_date)." 6:30pm \n";
+    $req_msg .= "Date: ".($requested_date)."\n";
     $req_msg .= "Comments: ".($comments)."\n";
 
     // Set up the confirmation subject and mail headers
@@ -49,8 +48,8 @@
 
     // Setup auto-reply message to customer
     $rep_msg = "";
-    $rep_msg .= "Thank you for your session request!  We will see you on ";
-    $rep_msg .= ($requested_date).".\n\n";
+    $rep_msg .= "Thank you for your session request!\n\n";
+    $rep_msg .= "One of the A-Team coaches will contact you shortly to confirm the date, time and location.\n\n";
     $rep_msg .= "Thanks,\n";
     $rep_msg .= "A-Team Vaulting";
  
