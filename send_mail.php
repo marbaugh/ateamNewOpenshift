@@ -15,8 +15,8 @@
 
     // Identify the mail server, username, password, and port
     $ateam_email = "ateamvaulting@gmail.com";
-    $server   = "ssl://smtp.sendgrid.net";
-    $username = "marbaugh";
+    $server   = "ssl://smtp.gmail.com";
+    $username = "ateamvaulting@gmail.com";
     $password = "MandKBestCoachesEver";
     $port     = "465";
 
