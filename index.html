@@ -431,15 +431,28 @@ $(function() {
     });
 });
 
+ 
+var unavailableDates = ["15-12-2014", "17-12-2014", "22-12-2014", "24-12-2014", "29-12-2014", "31-12-2014"];
+
+    function unavailable(date) {
+        dmy = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear();
+        if ($.inArray(dmy, unavailableDates) == -1) {
+            return mondayWednesdayFilter(new Date(date.getFullYear(),date.getMonth(),date.getDate()));
+        } else {
+            return [false, "", "Unavailable"];
+        }
+    }
+
         // Logic to filter on only Monday and Wednesdays for the date/time picker
         var mondayWednesdayFilter = function( currentDateTime ){
             return [currentDateTime.getDay() == 1 || currentDateTime.getDay() == 3 ? true : false];
         };
+
         // Initialize the jquery-ui datepicker with options
         $(function() {
             $( "#datepicker" ).datepicker({
                 minDate:0,
-                beforeShowDay: mondayWednesdayFilter});
+                beforeShowDay: unavailable});
         });
         </script>
 
