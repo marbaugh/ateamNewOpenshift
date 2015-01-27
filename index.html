@@ -146,7 +146,8 @@
                <div class="panel-heading"> <h4>Book a Session</h4></div>
                <div class="panel-body">
                  <p>Use the form to set up a coaching appointment!</p>
-		 <p><b>Please note the session for 01/21/15 is full.</b></p>
+		 <p><b>Sorry, the session for 01/28/15 is full.</b></p>
+         <p><b>Please note starting the week of Feb. 2nd sessions will switch to Tuesday/Thursday.</b></p>
                  <form name="userInput" id="userInput" action="" method="POST">
                     Name: <input type="text" style='width:100%' name="name" placeholder="Enter Name" data-validation="length" data-validation-length="1-50" data-validation-error-msg="You did not enter a valid name"><br />
                     E-mail: <input type="text" style='width:100%' name="email" placeholder="Enter E-mail" data-validation="email" data-validation-error-msg="You did not enter a valid e-mail"><br />
@@ -436,7 +437,7 @@ $(function() {
 });
 
  
-var unavailableDates = ["15-12-2014", "17-12-2014", "22-12-2014", "24-12-2014", "29-12-2014", "31-12-2014", "21-1-2015"];
+var unavailableDates = ["15-12-2014", "17-12-2014", "22-12-2014", "24-12-2014", "29-12-2014", "31-12-2014", "21-1-2015", "28-1-2015"];
 
     function unavailable(date) {
         dmy = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear();
@@ -449,7 +450,7 @@ var unavailableDates = ["15-12-2014", "17-12-2014", "22-12-2014", "24-12-2014", 
 
         // Logic to filter on only Monday and Wednesdays for the date/time picker
         var mondayWednesdayFilter = function( currentDateTime ){
-            return [currentDateTime.getDay() == 1 || currentDateTime.getDay() == 3 ? true : false];
+            return [currentDateTime.getDay() == 2 || currentDateTime.getDay() == 4 ? true : false];
         };
 
         // Initialize the jquery-ui datepicker with options
