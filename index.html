@@ -147,7 +147,6 @@
                <div class="panel-body">
                  <p>Use the form to set up a coaching appointment!</p>
 		 <p><b>Sorry, the session for 01/28/15 is full.</b></p>
-         <p><b>Please note starting the week of Feb. 2nd sessions will switch to Tuesday/Thursday.</b></p>
                  <form name="userInput" id="userInput" action="" method="POST">
                     Name: <input type="text" style='width:100%' name="name" placeholder="Enter Name" data-validation="length" data-validation-length="1-50" data-validation-error-msg="You did not enter a valid name"><br />
                     E-mail: <input type="text" style='width:100%' name="email" placeholder="Enter E-mail" data-validation="email" data-validation-error-msg="You did not enter a valid e-mail"><br />
@@ -169,10 +168,9 @@
         <div class="panel panel-default">
             <div class="panel-heading"><h4>Current Activities</h4></div>
             <div class="panel-body">
-                <p>Current vault sessions are taking place Monday and Wednesday evenings.
+                <p>Beginning 2/2/15, vault sessions are taking place Tuesday and Thursday evenings.
 		<br/>
 		<br/>
-		<b>Please note the session start time has changed from 5:30 to 6:00 starting 01/21/15.</b> 
                    <ul>
                      <span class="glyphicon glyphicon-calendar"></span> 6:00-7:00 </br>
                      <span class="glyphicon glyphicon-globe"></span> Towson University's Towson Center
@@ -437,7 +435,7 @@ $(function() {
 });
 
  
-var unavailableDates = ["27-1-2015", "29-1-2015"];
+var unavailableDates = [    "27-1-2015", "29-1-2015"];
 
     function unavailable(date) {
         dmy = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear();
