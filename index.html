@@ -454,6 +454,7 @@ var unavailableDates = [    "27-1-2015", "29-1-2015"];
         $(function() {
             $( "#datepicker" ).datepicker({
                 minDate:0,
+                maxDate:'+30D',
                 beforeShowDay: unavailable});
         });
         </script>
