@@ -20,13 +20,6 @@
     $password = "MandKBestCoachesEver";
     $port     = "465";
 
-    // Identify the mail server, username, password, and port
-    $towson_email = "towsonvaulting@gmail.com";
-    $towson_server   = "ssl://smtp.gmail.com";
-    $towson_username = "towsonvaulting@gmail.com";
-    $towson_password = "MandKBestCoachesEver";
-    $towson_port     = "465";
-
     // Set up the request subject and mail headers
     $req_subject = "Session Request: ".($customer_name)." - ".($requested_date);
     $req_headers = array(
@@ -62,7 +55,7 @@
     $rep_msg .= "A-Team Vaulting";
  
     // Configure the mailer mechanism
-    $ateam_smtp = Mail::factory("smtp",
+    $smtp = Mail::factory("smtp",
         array(
             "host"     => $server,
             "username" => $username,
@@ -72,23 +65,12 @@
         )
     );
  
-    // Configure the mailer mechanism
-    $towson_smtp = Mail::factory("smtp",
-        array(
-            "host"     => $towson_server,
-            "username" => $towson_username,
-            "password" => $towson_password,
-            "auth"     => true,
-            "port"     => 465
-        )
-    );
-
     // Send the request message to Ateam Vaulting
-    $req_mail = $towson_smtp->send($ateam_email, $req_headers, $req_msg);
+    $req_mail = $smtp->send($ateam_email, $req_headers, $req_msg);
     if (PEAR::isError($req_mail)) die($req_mail->getMessage());
     
     // Send the auto-reply message to the customer
-    $rep_mail = $ateam_smtp->send($customer_email, $rep_headers, $rep_msg);
+    $rep_mail = $smtp->send($customer_email, $rep_headers, $rep_msg);
     if (PEAR::isError($rep_mail)) die($rep_mail->getMessage());
 
 ?>
