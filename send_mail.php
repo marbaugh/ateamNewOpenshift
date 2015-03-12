@@ -14,7 +14,7 @@
     $comments = $_POST["comments"];
 
     // Identify the mail server, username, password, and port
-    $ateam_email = "towsonvaulting@gmail.com";
+    $ateam_email = "ateamvaulting@gmail.com";
     $server   = "ssl://smtp.gmail.com";
     $username = "ateamvaulting@gmail.com";
     $password = "MandKBestCoachesEver";
