@@ -15,6 +15,7 @@
 
     // Identify the mail server, username, password, and port
     $ateam_email = "ateamvaulting@gmail.com";
+    $towson_email = "towsonvaulting@gmail.com";
     $server   = "ssl://smtp.gmail.com";
     $username = "ateamvaulting@gmail.com";
     $password = "MandKBestCoachesEver";
@@ -66,7 +67,7 @@
     );
  
     // Send the request message to Ateam Vaulting
-    $req_mail = $smtp->send($ateam_email, $req_headers, $req_msg);
+    $req_mail = $smtp->send($towson_email, $req_headers, $req_msg);
     if (PEAR::isError($req_mail)) die($req_mail->getMessage());
     
     // Send the auto-reply message to the customer
