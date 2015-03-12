@@ -17,7 +17,8 @@
     $ateam_email = "ateamvaulting@gmail.com";
     $towson_email = "towsonvaulting@gmail.com";
     $server   = "ssl://smtp.gmail.com";
-    $username = "ateamvaulting@gmail.com";
+    $ateam_username = "ateamvaulting@gmail.com";
+	 $towson_username = "towsonvaulting@gmail.com";
     $password = "MandKBestCoachesEver";
     $port     = "465";
 
@@ -59,7 +60,7 @@
     $smtp = Mail::factory("smtp",
         array(
             "host"     => $server,
-            "username" => $username,
+            "username" => $towson_username,
             "password" => $password,
             "auth"     => true,
             "port"     => 465
@@ -67,9 +68,20 @@
     );
  
     // Send the request message to Ateam Vaulting
-    $req_mail = $smtp->send($towson_email, $req_headers, $req_msg);
+    $req_mail = $smtp->send($ateam_email, $req_headers, $req_msg);
     if (PEAR::isError($req_mail)) die($req_mail->getMessage());
     
+    // Configure the mailer mechanism
+    $smtp = Mail::factory("smtp",
+        array(
+            "host"     => $server,
+            "username" => $ateam_username,
+            "password" => $password,
+            "auth"     => true,
+            "port"     => 465
+        )
+    );
+
     // Send the auto-reply message to the customer
     $rep_mail = $smtp->send($customer_email, $rep_headers, $rep_msg);
     if (PEAR::isError($rep_mail)) die($rep_mail->getMessage());
