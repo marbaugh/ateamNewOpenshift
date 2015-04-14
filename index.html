@@ -146,7 +146,7 @@
                <div class="panel-heading"> <h4>Book a Session</h4></div>
                <div class="panel-body">
                  <p>Use the form to set up a coaching appointment!</p>
-		 <p><b>The sessions for this week have been moved to Mon/Wed due to rain in the forecast!</b></p>
+		 <p><b></b></p>
                  <form name="userInput" id="userInput" action="" method="POST">
                     Name: <input type="text" style='width:100%' name="name" placeholder="Enter Name" data-validation="length" data-validation-length="1-50" data-validation-error-msg="You did not enter a valid name"><br />
                     E-mail: <input type="text" style='width:100%' name="email" placeholder="Enter E-mail" data-validation="email" data-validation-error-msg="You did not enter a valid e-mail"><br />
@@ -434,7 +434,7 @@ $(function() {
 });
 
  
-var unavailableDates = ["27-1-2015", "31-3-2015", "9-4-2015"];
+var unavailableDates = ["27-1-2015", "31-3-2015", "15-4-2015"];
 
     function unavailable(date) {
         dmy = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear();
@@ -447,7 +447,7 @@ var unavailableDates = ["27-1-2015", "31-3-2015", "9-4-2015"];
 
         // Logic to filter on only Monday and Wednesdays for the date/time picker
         var mondayWednesdayFilter = function( currentDateTime ){
-            return [currentDateTime.getDay() == 1 || currentDateTime.getDay() == 3 ? true : false];
+            return [currentDateTime.getDay() == 2 || currentDateTime.getDay() == 4 ? true : false];
         };
 
         // Initialize the jquery-ui datepicker with options
