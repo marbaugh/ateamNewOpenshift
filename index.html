@@ -168,10 +168,10 @@
         <div class="panel panel-default">
             <div class="panel-heading"><h4>Current Activities</h4></div>
             <div class="panel-body">
-                <p><b>Beginning 02/02/15, vault sessions are taking place Tuesday and Thursday evenings.</b></p>
+                <p><b>Summer vault sessions are taking place on Monday OR Tuesday evenings.  Please refer to the Session Calendar when signing up!</b></p>
 		<br/>
                    <ul>
-                     <span class="glyphicon glyphicon-calendar"></span> 6:00-7:00 pm </br>
+                     <span class="glyphicon glyphicon-calendar"></span> 5:30-6:30 pm </br>
                      <span class="glyphicon glyphicon-globe"></span> Towson University's Towson Center
                  </ul>
              </p>
@@ -434,7 +434,7 @@ $(function() {
 });
 
  
-var unavailableDates = ["26-5-2015", "28-5-2015", "2-6-2015", "4-6-2015"];
+var unavailableDates = ["8-6-2015", "16-6-2015", "22-6-2015", "30-6-2015", "6-7-2015", "13-7-2015", "14-7-2015", "20-7-2105", "28-7-2015", "3-8-2015", 10-8-2015", "17-8-2015", "24-8-2015"];
 
     function unavailable(date) {
         dmy = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear();
@@ -445,9 +445,12 @@ var unavailableDates = ["26-5-2015", "28-5-2015", "2-6-2015", "4-6-2015"];
         }
     }
 
-        // Logic to filter on only Monday and Wednesdays for the date/time picker
+        
+	// Logic to filter on only Monday and Tuesday for the date/time picker
+	// Logic to filter on only Tuesday and Thursday for the date/time picker
         var mondayWednesdayFilter = function( currentDateTime ){
-            return [currentDateTime.getDay() == 2 || currentDateTime.getDay() == 4 ? true : false];
+            // return [currentDateTime.getDay() == 2 || currentDateTime.getDay() == 4 ? true : false];
+            return [currentDateTime.getDay() == 1 || currentDateTime.getDay() == 2 ? true : false];
         };
 
         // Initialize the jquery-ui datepicker with options
