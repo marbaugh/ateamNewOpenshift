@@ -450,7 +450,7 @@ var unavailableDates = ["3-8-2015", "10-8-2015", "11-8-2015", "17-8-2015", "19-8
 	// Logic to filter on only Tuesday and Thursday for the date/time picker
         var mondayWednesdayFilter = function( currentDateTime ){
             // return [currentDateTime.getDay() == 2 || currentDateTime.getDay() == 4 ? true : false];
-            return [currentDateTime.getDay() == 1 || currentDateTime.getDay() == 2 || currentDateTime.getDay() == 3 currentDateTime.getDay() == 4 ? true : false];
+            return [currentDateTime.getDay() == 1 || currentDateTime.getDay() == 2 || currentDateTime.getDay() == 3 || currentDateTime.getDay() == 4 ? true : false];
         };
 
         // Initialize the jquery-ui datepicker with options
