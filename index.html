@@ -433,32 +433,25 @@ $(function() {
     });
 });
 
+var availableDates = ["31-8-2015","9-9-2015","14-9-2015"];
+
+function available(date) {
+  dmy = date.getDate() + "-" + (date.getMonth()+1) + "-" + date.getFullYear();
+  console.log(dmy+' : '+($.inArray(dmy, availableDates)));
+  if ($.inArray(dmy, availableDates) != -1) {
+    return [true, "","Available"];
+  } else {
+    return [false,"","unAvailable"];
+  }
+}
+
  
-var unavailableDates = ["3-8-2015", "10-8-2015", "11-8-2015", "17-8-2015", "19-8-2015", "24-8-2015", "25-8-2015", "26-8-2015"];
-
-    function unavailable(date) {
-        dmy = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear();
-        if ($.inArray(dmy, unavailableDates) == -1) {
-            return mondayWednesdayFilter(new Date(date.getFullYear(),date.getMonth(),date.getDate()));
-        } else {
-            return [false, "", "Unavailable"];
-        }
-    }
-
-        
-	// Logic to filter on only Monday and Tuesday and Wednesday for the date/time picker
-	// Logic to filter on only Tuesday and Thursday for the date/time picker
-        var mondayWednesdayFilter = function( currentDateTime ){
-            // return [currentDateTime.getDay() == 2 || currentDateTime.getDay() == 4 ? true : false];
-            return [currentDateTime.getDay() == 1 || currentDateTime.getDay() == 2 || currentDateTime.getDay() == 3 || currentDateTime.getDay() == 4 ? true : false];
-        };
-
         // Initialize the jquery-ui datepicker with options
         $(function() {
             $( "#datepicker" ).datepicker({
                 minDate:0,
                 maxDate:'+30D',
-                beforeShowDay: unavailable});
+                beforeShowDay: available });
         });
         </script>
 
