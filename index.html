@@ -1,470 +1,324 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-    <!-- metatags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="A-Team Vaulting">
-    <meta name="subject" content="Pole Vault Coaching Service">
-    <meta name="description" content="A-Team Vaulting is a pole vault coaching service in the Baltimore area. We provide coaching and facilities for pole vaulters of all levels" />
-    <meta name="keywords" content="ateamvaulting, A-Team Vaulting, ATeam Vaulting, A Team Vaulting, ateam, Maryland, Baltimore, Pole Vault, Track, Coaching, Vaulting, Training, Clinics, Track and Field" />
-    <META name="author" content="https://plus.google.com/+Ateamvaultingservice/">
-    <META name="language" content="English">
-    <meta name="robots" content="index, follow">
-    <meta name="revisit-after" content="1 month">
-    <!-- A-Team, Pole Vault, Coaching --> 
-    <title>A-Team Vaulting</title>
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="title" content="A-Team Vaulting">
+	<meta name="subject" content="Pole Vault Coaching Service">
+	<meta name="description" content="A-Team Vaulting is a pole vault coaching service in the Baltimore area. We provide coaching and facilities for pole vaulters of all levels" />
+	<meta name="keywords" content="ateamvaulting, A-Team Vaulting, ATeam Vaulting, A Team Vaulting, ateam, Maryland, Baltimore, Pole Vault, Track, Coaching, Vaulting, Training, Clinics, Track and Field" />
+	<meta name="author" content="https://plus.google.com/+Ateamvaultingservice/">
+	<meta name="language" content="English">
+	<meta name="robots" content="index, follow">
+	<meta name="revisit-after" content="1 month">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+	<!-- Website Title -->
+	<title>A-Team Vaulting</title>
 
-    <!-- Add custom CSS here -->
-    <link href="css/modern-business.css" rel="stylesheet">
-    <link href="css/bootstrap-image-gallery.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="js/jquery-ui-1.11.0/jquery-ui.css" rel="stylesheet">
-    <link href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css" rel="stylesheet" >
-    <link href="css/bootstrap-social.css" rel="stylesheet">
-    <link rel="shortcut icon" href="favicon.ico" type="image/icon">
-    <link rel="icon" href="favicon.ico" type="image/icon">  
-    
-</head>
+	<!--  Favicon.ico and apple-touch-icon in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico" type="image/icon">
+	<link rel="icon" href="favicon.ico" type="image/icon">  
+	<link rel="apple-touch-icon" href="favicon.ico" type="image/icon">  
 
-<body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js  -->
-               <img src="img/main_logo.png" style="PADDING-LEFT: 10px" alt="A-Team_Logo" width="142" height="46">
+	<!-- JQuery UI CSS for datepicker-->
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.theme.min.css">
 
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#experience">Experience</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#userForm">Book A Session</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- /.container -->
-    </nav>
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Fonts from Font Awsome -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Magnific popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" href="css/main.css">
 
-<!-- Slider begins -->
-<img src="slider_fix.png" alt="Mountain View" style='width:100%;' border="0">
-<!--Slider ends -->
+	<!-- Color styles -->
+	<!-- <link rel="stylesheet" href="css/colors/blue.css"> -->
+	<!-- <link rel="stylesheet" href="css/colors/yellow.css">-->
+	<!-- <link rel="stylesheet" href="css/colors/red.css">-->
+	<!-- <link rel="stylesheet" href="css/colors/purple.css">-->
+	<link rel="stylesheet" href="css/colors/orange.css">
+	<!-- <link rel="stylesheet" href="css/colors/green.css">-->
 
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12 text-center">
-        <h1 class="page-header">A-Team Vaulting is a pole vault coaching service in the Baltimore area.  We provide coaching and facilities for pole vaulters of all levels.</h1>
-    </div>
-</div>
-<!-- /.row -->
+	<!-- Feature detection -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
 
-</div>
-<!-- /.container -->
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="js/plugins/html5shiv.js"></script>
+          <script src="js/plugins/respond.min.js"></script>
+          <![endif]-->
+      </head>
+      <body>
+      	<div class="navbar navbar-default navbar-static-top" role="navigation">
+      		<div class="container">
+      			<div class="navbar-header">
+      				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+      					<span class="sr-only">Toggle navigation</span>
+      					<span class="icon-bar"></span>
+      					<span class="icon-bar"></span>
+      					<span class="icon-bar"></span>
+      				</button>
+      			</div>
+      			<div class="navbar-collapse collapse">
+      				<ul class="nav navbar-nav" id="main-menu">
+      					<li><a href="#page-welcome">Home</a></li>
+      					<li><a href="#page-experience">About US</a></li>
+      					<li><a href="#page-education">Coaches</a></li>
+      					<li><a href="#page-contact">Contact</a></li>
+      					<li><a href="#page-profile">FAQ</a></li>
+      					<li><a href="#page-portfolio">Our Vaulters</a></li>
+      				</ul>
+      			</div><!--/.nav-collapse -->
+      		</div>
+      	</div>
+      	<!-- welcome begins -->
+      	<section id="page-welcome" class="page-welcome">
+      		<div>
+      			<ul class="slider-controls">
+      				<li><a id="vegas-next" class="next" href="#"></a></li>
+      				<li><a id="vegas-prev" class="prev" href="#"></a></li>
+      			</ul>
+      		</div>
+      		<div class="container">
+      			<div class="row">
+      				<header class="centered">
+      					<h1>A-Team</h1>
+      					<p>Pole Vault Coaching</p>
+      				</header>
+      				<div class="social-icons">
+      					<a href="https://twitter.com/ateamvaulting" class="btn btn-round btn-clear btn-twitter" target="_blank"><i class="fa fa-twitter"></i> </a>
+      					<a href="https://www.facebook.com/ateamvaulting" class="btn btn-round btn-clear btn-facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+      					<!--<a href="https://www.instagram.com/" class="btn btn-round btn-clear btn-instagram"><i class="fa fa-instagram"></i></a>-->
+      					<a href="https://plus.google.com/+Ateamvaultingservice/about" class="btn btn-round btn-clear btn-google" target="_blank"><i class="fa fa-google-plus"></i></a>
+      				</div>
+      				<a href="#page-contact" class="btn btn-default hire-me">Book A Session!</a>
+      			</div>
+      		</div>
+      	</section><!-- welcome ends -->
+      	<!-- experience begins -->
+      	<section id="page-experience" class="page-experience">
+      		<div class="container">
+      			<header class="section-header">
+      				<h2 class="section-title"><span>What We Offer</span></h2>
+      				<div class="spacer"></div>
+      				<p class="section-subtitle">Year-round pole vault coaching located in Towson, MD.</p>
+      			</header>
+      			<div class="row">
+      				<div class="col-md-4">
+      					<article class="experience">
+      						<header>
+      							<h3>USA Track & Field</h3>
+      						</header>
+      						<p>A-Team Vaulting is a registered USA Track & Field club with USATF Potomac Valley Clubs, Club #:10-1217.  All club members <a href="https://www.usatf.org/membership/application/index.asp" target="_blank">must have a USATF membership</a> prior to their first vault session to be covered by the liability insurance during registered club practices.</p>
+      					</article>
+      				</div>
+      				<div class="col-md-4">
+      					<article class="experience">
+      						<header>
+      							<h3>Facilities</h3>
+      						</header>
+      						<p>A-Team Vaulting leverages the Towson University's Towson Center for indoor practices and Johnny Unitas Stadium at Minnegan Field for outdoor practices.  Both facilities are located on Auburn Drive in Towson, MD 21252.</p>
+      						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2470.1785466320407!2d-76.61590347356848!3d39.38794470776591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x141852690c2eed9c!2sJohnny+Unitas+Stadium!5e0!3m2!1sen!2sus!4v1440790520298" width="300" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+      					</article>
+      				</div>
+      				<div class="col-md-4">
+      					<article class="experience">
+      						<header>
+      							<h3>Rates</h3>
+      						</header>
+      						<p>We provide pole vault lessons year-round to athletes of all ages and skill levels in the Baltimore area. Sessions last approximately 1 hour and there is anywhere from 1-6 vaulters per session. The cost is $50 per vaulter per session.</p>
+      					</article>
+      				</div>
+      			</div>
+      		</div>
+      	</section><!-- experience ends -->  
+      	<!-- education begins -->
+      	<section id="page-education" class="page-education">
+      		<div class="container">
+      			<header class="section-header">
+      				<h2 class="section-title"><span>The Coaches</span></h2>
+      				<div class="spacer"></div>
+      				<p class="section-subtitle">Matthew and Kelli Arbaugh both attended the University of Delaware as pole vaulters on the NCAA Division I Indoor and Outdoor track teams. Since graduating college, they have provided private coaching lessons and clinics to many high school and college level vaulters in the Baltimore Area. They also volunteer their time as pole vault coaches for the Towson University Women's NCAA Division I Indoor and Outdoor track teams. Together, Matthew and Kelli bring deep knowledge of the sport and diverse personal experiences to A-Team and to the athletes they coach.</p>
+      			</header>
+      			<div class="row">
+      				<div class="col-md-6">
+      					<article class="education">
+      						<img src="img/matthew2.png" alt="profile" class="img-responsive center-block"/>
+      						<p>Matthew is originally from Owings Mills, Maryland and started his pole vaulting career as a freshman in high school. Matthew attended Loyola Blakefield where he is the current indoor and outdoor pole vault record holder. Matthew joined the University of Delaware track team in 2003 where he competed all 4 years. In 2006, Matthew received the Blue Hen Sportsmanship Award which honors those scholar-athletes who are outstanding role models and display outstanding sportsmanship towards their teammates, coaches, opponents and game officials. The best jump of Matthew’s career was 4.45m (14' 07") at the Colonial Athletic Association Championship meet in 2007.</p>
+      					</article>
+      				</div>
+      				<div class="col-md-6">
+      					<article class="education">
+      						<img src="img/kelli2.png" alt="profile" class="img-responsive center-block"/> 
+      						<p>Kelli is originally from Phoenixville, Pennsylvania and started her pole vaulting career as a freshman in high school. She joined the University of Delaware track team in 2005 where she competed all 4 years. Kelli was selected to the ESPN The Magazine CoSIDA District 2 All-Academic Team for women's track and field in 2008, and was named CAA Women's Track and Field Scholar Athlete of the Year in 2009. In the same year she qualified for NCAA Division I Regionals where she placed 7th. Kelli is the current pole vault record holder at the University of Delaware with a vault of 3.91m (12'10”), and still enjoys competing in open meets in her free time.</p>
+      					</article>
+      				</div>
+      			</div>
+      		</div>
+      	</section><!-- education ends -->
+      	<!-- contact begins -->
+      	<section id="page-contact" class="page-contact">
+      		<div class="container">
+      			<header class="section-header">
+      				<h2 class="section-title"><span>Contact</span></h2>
+      				<div class="spacer"></div>
+      				<p class="section-subtitle"></p>
+      			</header>
+      			<div class="row">
+      				<div class="col-sm-5 contact-info">
+      					<h3>Our Info</h3>
+      					<p><i class="fa fa-phone"></i>(443) 547-4288</p>
+      					<p><i class="fa fa-envelope-o"></i> <a href="mailto:ateamvaulting@gmail.com">ateamvaulting@gmail.com</a></p>
+      				</div>
 
-<div class="section">
-
-    <div class="container">
-
-        <div id="experience" class="row">
-            <div class="col-lg-4 col-md-4">
-                <img class="img-circle img-responsive" src="img/circles/experience2.png">
-                <h3>Experience</h3>
-                <p>Matthew and Kelli Arbaugh both attended the University of Delaware as pole vaulters on the NCAA Division I Indoor and Outdoor track teams. Since graduating college, they have provided private coaching lessons and clinics to many high school and college level vaulters in the Baltimore Area. They also volunteer their time as pole vault coaches for the Towson University Women's NCAA Division I Indoor and Outdoor track teams (http://goo.gl/IcJE48).  Together, Matthew and Kelli bring deep knowledge of the sport and diverse personal experiences to the A-Team and to the athletes they coach.</p>
-            </div>
-            <div class="col-lg-4 col-md-4">
-                <img class="img-circle img-responsive" src="img/circles/matthew2.png">
-                <h3>Matthew</h3>
-                <p>Matthew is originally from Owings Mills, Maryland and started his pole vaulting career as a freshman in high school. Matthew attended Loyola Blakefield where he is the current indoor and outdoor pole vault record holder. Matthew joined the University of Delaware track team in 2003 where he competed all 4 years. In 2006, Matthew received the Blue Hen Sportsmanship Award which honors those scholar-athletes who are outstanding role models and display outstanding sportsmanship towards their teammates, coaches, opponents and game officials. The best jump of Matthew’s career was 4.45m (14' 07") at the Colonial Athletic Association Championship meet in 2007.</p>
-            </div>
-            <div class="col-lg-4 col-md-4">
-                <img class="img-circle img-responsive" src="img/circles/kelli2.png">
-                <h3>Kelli</h3>
-                <p>Kelli is originally from Phoenixville, Pennsylvania and started her pole vaulting career as a freshman in high school. She joined the University of Delaware track team in 2005 where she competed all 4 years. Kelli was selected to the ESPN The Magazine CoSIDA District 2 All-Academic Team for women's track and field in 2008, and was named CAA Women's Track and Field Scholar Athlete of the Year in 2009. In the same year she qualified for NCAA Division I Regionals where she placed 7th. Kelli is the current pole vault record holder at the University of Delaware with a vault of 3.91m (12'10”), and still enjoys competing in open meets in her free time.</p>
-            </div>
-        </div>
-        <!-- /.row -->
-
-    </div>
-    <!-- /.container -->
-
-</div>
-<!-- /.section -->
-
-
-
-
-<div class="section-colored">
-
-    <div class="container">
-
-        <div class="row">
-            <div id="contact" class="col-lg-4 col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading"><h4>Contact</h4></div>
-                    <div class="panel-body">
-                      <p>Please feel free to contact us if you have any questions or comments.  We look forward to hearing from you!</p>
-                      <ul>
-                        <span class="glyphicon glyphicon-earphone"></span> (443) 574-4ATV (4288) <br />
-                        <span class="glyphicon glyphicon-envelope"></span> <a href="mailto:ateamvaulting@gmail.com?Subject=A-Team%20Inquiry" target="_top"> Send EMail</a> <br />
-                        <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/ateamvaulting" title="Follow us on Facebook">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                        <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/ATeamVaulting" title="Tweet at us">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                        <a class="btn btn-social-icon btn-google-plus" href="https://plus.google.com/+Ateamvaultingservice" title="Follow us on Google+">
-                            <i class="fa fa-google-plus"></i>
-                        </a>
-                        <a class="btn btn-social-icon btn-youtube" href="https://www.youtube.com/user/ATeamVaultingService" title="Subscribe to our YouTube channel">
-                            <i class="fa fa-youtube"></i>
-                        </a>
-                    </ul>
-                    <a class="twitter-timeline" height="250" href="https://twitter.com/ATeamVaulting" data-widget-id="527444974543974400">Tweets by @ATeamVaulting</a>
-                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      				<div id="userForm" class="col-sm-7">
+      					<h3>Book A Session!</h3>
+      					<form  class="form-horizontal" id="contact-form" method="POST">
+      						<div class="control-group">
+      							<label class="control-label" for="name">Name</label>
+      							<div class="controls">
+      								<input type="text" name="name" id="name" placeholder="Your name" class="form-control input-lg ">
+      							</div>
+      						</div>
+      						<div class="control-group">
+      							<label class="control-label" for="email">Email Address</label>
+      							<div class="controls">
+      								<input type="text" name="email" id="email" placeholder="Your email address" class="form-control input-lg">
+      							</div>
+      						</div>
+      						<div class="control-group">
+      							<label class="control-label" for="phone">Phone Number</label>
+      							<div class="controls">
+      								<input type="tel" name="phone" id="phone" placeholder="Your phone number" class="form-control input-lg">
+      							</div>
+      						</div>
+      						<div class="control-group">
+      							<label class="control-label" for="date">Date</label>
+      							<div class="controls">
+      								<input type="text" name="date" id="date" placeholder="Choose a Session Date" class="form-control input-lg">
+      							</div>
+      						</div>
+      						<div class="control-group">
+      							<label class="control-label" for="message">Message</label>
+      							<div class="controls">
+      								<textarea name="comments" id="comments" rows="8" class="form-control input-lg"></textarea>
+      							</div>
+      						</div>
+      						<div class="form-actions">
+      							<!-- <button type="submit" class="btn btn-default btn-lg btn-block">Submit Message</button> -->
+                                                <input type="submit" value="Submit Session Request" class="btn btn-default btn-lg btn-block">
+      						</div>
+      					</form><!-- End contact-form -->
+      				</div>
+                              <div id= "thanks" style="display: none "class="col-sm-7 text-center">
+                                    <h5> Thanks for your request! </h5>
+                                    <button id="showForm">Return to Form</button>
+                              </div>
+      			</div><!-- End row -->
+      		</div>
+      	</section> <!-- contact ends --> 
+      	<!-- profile begins -->
+      	<section id="page-profile" class="page-profile">
+      		<div class="container">
+      			<header class="section-header">
+      				<h2 class="section-title">FAQ</h2>
+      				<div class="spacer"></div>
+      				<p class="section-subtitle">
+      					<h5>I have never pole vaulted before. Can I still book a session?</h5>
+      					<h7>Yes! A-Team Vaulting works with athletes of all ages and skill levels. New vaulters are always welcome!</h7>
+      					<h5>Do I need to bring my own poles?</h5>
+      					<h7>You can bring your own poles, or A-Team has a selection of poles available for use during practices.</h7>
+      					<h5>Can my parents attend practice?</h5>
+      					<h7>Absolutely!  There is pleny of room for parents to stay and watch.</h7>
+      					<h5>Are practices held year-round?</h5>
+      					<h7>Yes, we practice year-round.</h7>
+      				</p>
+      			</header>
+      		</div> 
+      	</section><!-- profile ends -->
+      	<!-- portfolio begins -->
+      	<section id="page-portfolio" class="page-portfolio">
+      		<div class="container">
+      			<div class="row">
+      				<header class="section-header">
+      					<h2 class="section-title"><span>Our Vaulters</span></h2>
+      					<div class="spacer"></div>
+      					<p class="section-subtitle"></p>
+      				</header>           
+      				<div id="grid-controls-wrapper">
+      					<ul class="nav nav-pills center-pills grid-controls">
+      						<li class="active filter"><a href="javascript:void(0)" data-filter="*">All</a></li>
+      						<li class="filter" ><a href="javascript:void(0)" data-filter=".branding">Vaulters</a></li>   
+      						<li class="filter" ><a href="javascript:void(0)" data-filter=".design">Coaches</a></li>            
+      						<li class="filter"><a href="javascript:void(0)"  data-filter=".photography">Facilities</a></li>
+      						<!--<li class="filter" ><a href="javascript:void(0)" data-filter=".web">Website</a></li>-->
+      					</ul>
+      				</div>
+                <div>
+                  <ul id="grid" class="grid-wrapper">
+                      <li class="mix branding" >
+                       <a href="img/portfolio/large/01.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/01.png" alt="" class="thumbnail">
+                      </a> </li>
+                      <li class="mix branding">
+                        <a href="img/portfolio/large/02.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/02.png" alt="" class="thumbnail"></a></li>
+                      <li class="mix branding">
+                        <a href="img/portfolio/large/03.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/03.png" alt="" class="thumbnail"></a></li>
+                      <li class="mix photography">
+                        <a href="img/portfolio/large/04.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/04.png" alt="" class="thumbnail"></a></li>                    
+                      <li class="mix branding">
+                        <a href="img/portfolio/large/05.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/05.png" alt="" class="thumbnail"></a></li>                         
+                  </ul>
                 </div>
             </div>
         </div>
+    </section><!-- portfolio ends -->
 
-        <div id="userForm" class="col-lg-4 col-md-4">
-           <div class="panel panel-default">
-               <div class="panel-heading"> <h4>Book a Session</h4></div>
-               <div class="panel-body">
-                 <p>Use the form to set up a coaching appointment!</p>
-		 <p><b></b></p>
-                 <form name="userInput" id="userInput" action="" method="POST">
-                    Name: <input type="text" style='width:100%' name="name" placeholder="Enter Name" data-validation="length" data-validation-length="1-50" data-validation-error-msg="You did not enter a valid name"><br />
-                    E-mail: <input type="text" style='width:100%' name="email" placeholder="Enter E-mail" data-validation="email" data-validation-error-msg="You did not enter a valid e-mail"><br />
-                    Phone: <input type="text" style='width:100%' name="phone" placeholder="Enter Phone Number" data-validation="custom" data-validation-regexp="^\(?([2-9][0-8][0-9])\)?[-. ]?([2-9][0-9]{2})[-. ]?([0-9]{4})$" data-validation-error-msg="You did not enter a valid phone number"><br />
-                    Date: <input type="text" style='width:100%' id="datepicker" name='date' placeholder="Choose a Session Date" data-validation="required" data-validation-error-msg="You did not choose a date"><br />
-                    Comment:<br /><textarea name='comments' style='width:100%' id='comments' placeholder="Additional Comments or Questions" /></textarea><br />
-                    <input type="submit" value="Submit" style="float: right;">
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div id= "thanks" style="display: none "class="col-lg-4 col-md-4 text-center">
-        <h5> Thanks for your request! </h5>
-        <button id="showForm">Return to Form</button>
-    </div>
-
-    <div class="col-lg-4 col-md-4">
-        <div class="panel panel-default">
-            <div class="panel-heading"><h4>Current Activities</h4></div>
-            <div class="panel-body">
-                <p><b>Summer vault sessions are taking place on Monday OR Tuesday evenings.  Please refer to the Session Calendar when signing up!</b></p>
-		<br/>
-                   <ul>
-                     <span class="glyphicon glyphicon-calendar"></span> 5:30-6:30 pm </br>
-                     <span class="glyphicon glyphicon-globe"></span> Towson University's Towson Center
-                 </ul>
-             </p>
-         </div>
-     </div>
- </div>
-
-</div>
-<!-- /.row -->
-</div>
-<!-- /.container -->
-
-</div>
-<!-- /.section-colored -->
-
-
-
-<div class="section">
-
-    <div class="container">
-
-        <div class="row">
-            <div class="col-lg-12 text-cente text-center">
-                <h2 class="page-header">Our Talented Vaulters</h2>
-            </div>
-        </div>
-
-            <div id="links" class="links">
-                <div class="row" style="text-align:center">
-                <div class="span1 img-thumbnail">
-                <a href="img/vaulters/large/large-1.jpg" title="" data-gallery>
-                    <img class="img-responsive img-hover" src="img/vaulters/thumbnails/thumbnail-1.jpg" alt="">
-                </a>
-                </div>   
-
-                <div class="span1 img-thumbnail">
-                <a href="img/vaulters/large/large-2.jpg" title="" data-gallery>
-                    <img class="img-responsive img-hover" src="img/vaulters/thumbnails/thumbnail-2.jpg" alt="">
-                </a>
-                </div>   
-
-                <div class="span1 img-thumbnail">
-                <a href="img/vaulters/large/large-3.jpg" title="" data-gallery>
-                    <img class="img-responsive img-hover" src="img/vaulters/thumbnails/thumbnail-3.jpg" alt="">
-                </a>
-                </div>
-
-                <div class="span1 img-thumbnail">
-                <a href="img/vaulters/large/large-4.jpg" title="" data-gallery>
-                    <img class="img-responsive img-hover" src="img/vaulters/thumbnails/thumbnail-4.jpg" alt="">
-                </a>
-                </div>
-
-                <div class="span1 img-thumbnail">
-                <a href="img/vaulters/large/large-5.jpg" title="" data-gallery>
-                    <img class="img-responsive img-hover" src="img/vaulters/thumbnails/thumbnail-5.jpg" alt="">
-                </a>
-                </div>
-
-                <div class="span1 img-thumbnail">
-                <a href="img/vaulters/large/large-6.jpg" title="" data-gallery>
-                    <img class="img-responsive img-hover" src="img/vaulters/thumbnails/thumbnail-6.jpg" alt="">
-                </a>
-                </div>
-
-                <div class="span1 img-thumbnail">
-                <a href="img/vaulters/large/large-7.jpg" title="" data-gallery>
-                    <img class="img-responsive img-hover" src="img/vaulters/thumbnails/thumbnail-7.jpg" alt="">
-                </a>
-                </div>
-
-                <div class="span1 img-thumbnail">
-                <a href="img/vaulters/large/large-8.jpg" title="" data-gallery>
-                    <img class="img-responsive img-hover" src="img/vaulters/thumbnails/thumbnail-8.jpg" alt="">
-                </a>
-                </div>
-
-                <div class="span1 img-thumbnail">
-                <a href="img/vaulters/large/large-9.jpg" title="" data-gallery>
-                    <img class="img-responsive img-hover" src="img/vaulters/thumbnails/thumbnail-9.jpg" alt="">
-                </a>
-            </div>
-
-            <div class="span1 img-thumbnail">
-                <a href="img/vaulters/large/large-10.jpg" title="" data-gallery>
-                    <img class="img-responsive img-hover" src="img/vaulters/thumbnails/thumbnail-10.jpg" alt="">
-                </a>
-            </div>
-
-            <div class="span1 img-thumbnail">
-                <a href="img/vaulters/large/large-11.jpg" title="" data-gallery>
-                    <img class="img-responsive img-hover" src="img/vaulters/thumbnails/thumbnail-11.jpg" alt="">
-                </a>
-            </div>
-
-            <div class="span1 img-thumbnail">
-                <a href="img/vaulters/large/large-12.jpg" title="" data-gallery>
-                    <img class="img-responsive img-hover"src="img/vaulters/thumbnails/thumbnail-12.jpg" alt="">
-                </a>
-            </div>
-
-            <div class="span1 img-thumbnail">
-                <a href="img/vaulters/large/large-13.jpg" title="" data-gallery>
-                    <img class="img-responsive img-hover" src="img/vaulters/thumbnails/thumbnail-13.jpg" alt="">
-                </a>
-            </div>
-
-                <div class="span1 img-thumbnail">
-                <a href="img/vaulters/large/large-14.jpg" title="" data-gallery>
-                    <img class="img-responsive img-hover" src="img/vaulters/thumbnails/thumbnail-14.jpg" alt="">
-                </a>
-            </div>
-
-            <div class="span1 img-thumbnail">
-                <a href="img/vaulters/large/large-15.jpg" title="" data-gallery>
-                    <img class="img-responsive img-hover" src="img/vaulters/thumbnails/thumbnail-15.jpg" alt="">
-                </a>
-            </div>
-
-            <div class="span1 img-thumbnail">
-                <a href="img/vaulters/large/large-16.jpg" title="" data-gallery>
-                    <img class="img-responsive img-hover" src="img/vaulters/thumbnails/thumbnail-16.jpg" alt="">
-                </a>
-            </div>
-                <div class="span1 img-thumbnail">
-                <a href="img/vaulters/large/large-17.jpg" title="" data-gallery>
-                    <img class="img-responsive img-hover" src="img/vaulters/thumbnails/thumbnail-17.jpg" alt="">
-                </a>
-            </div>
-
-            <div class="span1 img-thumbnail">
-                <a href="img/vaulters/large/large-18.jpg" title="" data-gallery>
-                    <img class="img-responsive img-hover" src="img/vaulters/thumbnails/thumbnail-18.jpg" alt="">
-                </a>
-            </div>
-
-            <div class="span1 img-thumbnail">
-                <a href="img/vaulters/large/large-19.jpg" title="" data-gallery>
-                    <img class="img-responsive img-hover" src="img/vaulters/thumbnails/thumbnail-19.jpg" alt="">
-                </a>
-            </div>
-
-            <div class="span1 img-thumbnail">
-                <a href="img/vaulters/large/large-20.jpg" title="" data-gallery>
-                    <img class="img-responsive img-hover" src="img/vaulters/thumbnails/thumbnail-20.jpg" alt="">
-                </a>
-            </div>
-
-            <div class="span1 img-thumbnail">
-                <a href="img/vaulters/large/large-21.jpg" title="" data-gallery>
-                    <img class="img-responsive img-hover" src="img/vaulters/thumbnails/thumbnail-21.jpg" alt="">
-                </a>
-            </div>
-
-            </div>  
-            <div id="blueimp-gallery" class="blueimp-gallery">
-                <div class="slides"></div>
-                <h3 class="title"></h3>
-                <a class="prev">‹</a>
-                <a class="next">›</a>
-                <a class="close">×</a>
-                <a class="play-pause"></a>
-                <ol class="indicator"></ol>
-            </div>
-        </div>
-        <!-- /.row -->
-
-    </div>
-    <!-- /.container -->
-
-</div>
-<!-- /.section -->
-
-
-
-<div class="container">
-
-    <hr>
-
-    <footer>
-        <div class="row">
-            <div class="col-lg-12">
-                <p>Copyright &copy; A-Team Vaulting 2014</p>
-            <!-- Add Microdata -->
-<div itemscope itemtype="http://schema.org/LocalBusiness">
-    <div itemprop="name">A-Team Vaulting</div>
-    <div>Email: <span itemprop="email"><a href='mailto:ateamvaulting@gmail.com'>ateamvaulting@gmail.com</a></span></div>
-    <div>Phone: <span itemprop="telephone">(443) 574-4288</span></div>
-    <div>Url: <span itemprop="url"><a href='www.ateamvaulting.com'>www.ateamvaulting.com</a></span></div>
-    <div itemprop="paymentAccepted"  style='display: none' >cash, check</div>
-    <meta itemprop="openingHours"  style='display: none'  datetime="Mo,Tu,We,Th,Fr 0-0" />
-    <div itemtype="http://schema.org/PostalAddress" itemscope="" itemprop="address">
-        <div itemprop="streetAddress"></div>
-        <div><span itemprop="addressLocality">Baltimore</span>, <span itemprop="addressRegion">MD</span> <span itemprop="postalCode">21212</span></div>
-    </div>
-</div>
-<!-- End Microdata -->
-            </div>
-
-        </div>
-    </footer>
-
-</div>
-<!-- /.container -->
-
-<!-- JavaScript -->
-<script src="js/jquery-1.11.1.js"></script>
-<script src="js/jquery-ui-1.11.0/jquery-ui.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/bootstrap-image-gallery.js"></script>
-<script src="js/jQuery-Form-Validator-master/form-validator/jquery.form-validator.js"></script>
-<script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-<script src="js/bootstrap-image-gallery.min.js"></script>
-<script src="js/modern-business.js"></script>
-<script src="https://apis.google.com/js/platform.js"></script>
-
-<script>
-$.validate({
-    validateOnBlur : false,
-    errorMessagePosition : 'top',
-    scrollToTopOnError : false,
-    onError : function() {
-        return false;
-    },
-    onSuccess : function() {
-        $.ajax({
-            url: 'send_mail.php',
-            type: 'POST',
-            data: $("#userInput").serialize(),
-            beforeSend: function() {
-                $("#message").html("sending...");
-            },
-            success: function(data) {
-                $("#message").hide();
-                $("#response").html(data);
-            }
-        });
-        $( "#userForm" ).hide();
-        $( "#thanks" ).show( "fast" );
-        return false;
-    }
-});
-
-$(function() {
-    function runEffect() {
-        $( "#userForm" ).effect( "fade");
-        $( "#thanks" ).show( "slow" );
-    };
-    function showEffect() {
-        $( "#thanks" ).hide();
-        $("#userInput")[0].reset();
-        $( "#userForm" ).effect( "fade");
-    };
-    $( "#button" ).click(function() {
-        runEffect();
-    });
-    $( "#showForm" ).click(function() {
-        showEffect();
-    });
-});
-
-var availableDates = ["31-8-2015","9-9-2015","14-9-2015","23-9-2015","28-9-2015"];
-
-function available(date) {
-  dmy = date.getDate() + "-" + (date.getMonth()+1) + "-" + date.getFullYear();
-  console.log(dmy+' : '+($.inArray(dmy, availableDates)));
-  if ($.inArray(dmy, availableDates) != -1) {
-    return [true, "","Available"];
-  } else {
-    return [false,"","unAvailable"];
-  }
-}
-
- 
-        // Initialize the jquery-ui datepicker with options
-        $(function() {
-            $( "#datepicker" ).datepicker({
-                minDate:0,
-                maxDate:'+30D',
-                beforeShowDay: available });
-        });
-        </script>
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.scrollTo.js"></script>
+        <script src="js/jquery.nav.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/jquery.easypiechart.min.js"></script>
+        <script src="js/jquery.vegas.min.js"></script>
+        <script src="js/jquery.isotope.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/jquery.validate.js"></script>
+        <script src='js/additional-methods.js'></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
 
         <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          var availableDates = ["31-8-2015","9-9-2015","14-9-2015","23-9-2015","28-9-2015"];
 
-  ga('create', 'UA-54892414-1', 'auto');
-  ga('send', 'pageview');
+          function available(date) {
+            dmy = date.getDate() + "-" + (date.getMonth()+1) + "-" + date.getFullYear();
+            console.log(dmy+' : '+($.inArray(dmy, availableDates)));
+            if ($.inArray(dmy, availableDates) != -1) {
+              return [true, "","Available"];
+            } else {
+              return [false,"","unAvailable"];
+            }
+          }
 
-</script>
-
+        // Initialize the jquery-ui datepicker with options
+        $(function() {
+          $( "#date" ).datepicker({
+            minDate:0,
+            maxDate:'+30D',
+            beforeShowDay: available });
+        });
+      </script>
     </body>
-    </html>
+</html>
