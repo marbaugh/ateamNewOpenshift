@@ -74,7 +74,7 @@ $(".navbar").sticky({topSpacing: 0});
      });
 
        // Collapse navbar on click
-        $('.nav a').on('click', function(){
+        $('#main-menu').on('click', function(){
             $('.navbar-toggle').click() //bootstrap 3.x
         });
 
