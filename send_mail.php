@@ -49,7 +49,7 @@ s<?php
 
     // Setup auto-reply message to customer
     $rep_msg = "";
-    $rep_msg .= "YOUR SESSION IS NOT CONFIRMED.\n\nThank you for your session request!  We will get back to you shortly to confirm or deny your request for.";
+    $rep_msg .= "YOUR SESSION IS NOT CONFIRMED.\n\nThank you for your session request!  We will get back to you shortly to confirm your request for ";
     $rep_msg .= ($requested_date)." at 5:30 pm.\n\n";
     $rep_msg .= "Thanks,\n";
     $rep_msg .= "A-Team Vaulting";
