@@ -40,7 +40,7 @@ s<?php
     // $req_msg .= "Comments: ".($comments)."\n";
 
     // Set up the confirmation subject and mail headers
-    $rep_subject = "Confirmation of Your Request for ".($requested_date);
+    $rep_subject = "Session Request Received - Not Yet Confirmed for ".($requested_date);
     $rep_headers = array(
         "From"    => $ateam_email,
         "To"      => $customer_email,
@@ -49,7 +49,7 @@ s<?php
 
     // Setup auto-reply message to customer
     $rep_msg = "";
-    $rep_msg .= "Thank you for your session request!  We will see you on ";
+    $rep_msg .= "YOUR SESSION IS NOT CONFIRMED.\n\nThank you for your session request!  We will get back to you shortly to confirm or deny your request for.";
     $rep_msg .= ($requested_date)." at 5:30 pm.\n\n";
     $rep_msg .= "Thanks,\n";
     $rep_msg .= "A-Team Vaulting";
