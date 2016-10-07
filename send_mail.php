@@ -17,7 +17,7 @@ s<?php
     $ateam_email = "ateamvaulting@gmail.com";
     $server   = "ssl://smtp.gmail.com";
     $username = "ateamvaulting@gmail.com";
-    $password = "MandKBestCoachesEver";
+    $password = "!QAZ2wsx#EDC4rfv";
     $port     = "465";
 
     // Set up the request subject and mail headers
