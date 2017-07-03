@@ -36,7 +36,7 @@ s<?php
     $req_msg .= "Name: ".($customer_name)."\n";
     $req_msg .= "Email: ".($customer_email)."\n";
     $req_msg .= "Phone: ".($customer_phone)."\n";
-    $req_msg .= "When: ".($requested_date)." 6:30pm \n";
+    $req_msg .= "When: ".($requested_date)." 5:30pm \n";
     // $req_msg .= "Comments: ".($comments)."\n";
 
     // Set up the confirmation subject and mail headers
@@ -50,7 +50,7 @@ s<?php
     // Setup auto-reply message to customer
     $rep_msg = "";
     $rep_msg .= "YOUR SESSION IS NOT CONFIRMED.\n\nThank you for your session request!  We will get back to you shortly to confirm your request for ";
-    $rep_msg .= ($requested_date)." at 6:30 pm.\n\n";
+    $rep_msg .= ($requested_date)." at 5:30 pm.\n\n";
     $rep_msg .= "Thanks,\n";
     $rep_msg .= "A-Team Vaulting";
  
